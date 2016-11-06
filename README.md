@@ -4,7 +4,7 @@ Este aplicativo foi desenvolvido para o desafio Hackathon - MT onde visa relatar
 # Objetivo
 O Objetivo do E-Saúde é criar uma conexão entre o cidadão e o Governo do Estado, sendo possível realizar denúncias de localidades com indícios de dengue, fazendo com que o agente de saúde mais próximo se dirija a localidade para realizar os procedimentos necessários de combate do mosquito.
 
-# Licensa de uso
+# Licenca de uso
 O codigo utilizado na aplicação é Código Proprietario da aplicação.
 
 ## Tabela de Conteúdo
