@@ -1,0 +1,77 @@
+﻿<ion-view view-title="Bem vindo" ng-controller="PrincipalController">
+    <!--<ion-header-bar class="bar bar-header">
+      <h1 class="title">Projeto Saude</h1>
+    </ion-header-bar>-->
+    <ion-content scroll="false">
+        <form id="formCadastro">
+            <div class="item item-image" style="padding:10px">
+                <img src="img/logo.png" style="height: 100px; width: 300px" />
+            </div>
+            <div class="list">
+                <label class="item item-input item-stacked-label">
+                    <span class="input-label">Login</span>
+                    <input type="text" ng-model="login.User" placeholder="Informe seu Login">
+                </label>
+                <label class="item item-input item-stacked-label">
+                    <span class="input-label">Senha</span>
+                    <input type="password" ng-model="login.Password" placeholder="Informe sua Senha">
+                </label>
+            </div>
+            <div class="col padding">
+                <button class="button button-full button-positive" ng-click="AuthorizationUser()">
+                    <span class="fa fa-check-circle"></span>&nbsp;Entrar
+                </button>
+
+                <button class="button button-full button-calm" ng-click="openModal()">
+                    <span class="fa fa-edit"></span>&nbsp;Cadastre-se
+                </button>
+            </div>
+        </form>
+        <script id="my-modal.html" type="text/ng-template">
+            <ion-modal-view>
+                <ion-header-bar class="bar bar-header bar-positive">
+                    <h1 class="title" style="left: 64px; right: 64px;">Novo Cadastro</h1>
+                    <button class="button button-clear button-primary" ng-click="closeModal()">Fechar</button>
+                </ion-header-bar>
+                <ion-content>
+                    <div class="list">
+                        <label class="item item-input item-stacked-label">
+                            <span class="input-label">Nome</span>
+                            <input type="text" ng-model="model.Nome" placeholder="Nome">
+                        </label>
+                        <label class="item item-input item-stacked-label">
+                            <span class="input-label">Sobrenome</span>
+                            <input type="text" ng-model="model.SobreNome" placeholder="Sobre Nome">
+                        </label>
+                        <!--<label class="item item-input item-stacked-label">
+                            <span class="input-label">CPF</span>
+                            <input type="text" ng-model="model.Cpf" placeholder="Cpf">
+                        </label>-->
+                        <!--<label class="item item-input">
+                            <span class="input-label">Data de Nascimento</span>
+                            <input type="date" ng-model="model.DataNascimento">
+                        </label>-->
+                        <label class="item item-input item-stacked-label">
+                            <span class="input-label">Email</span>
+                            <input type="text" ng-model="model.Email" placeholder="Email">
+                        </label>
+                        <!--<label class="item item-input item-stacked-label">
+                            <span class="input-label">Celular</span>
+                            <input type="text" ng-model="model.Celular" placeholder="Celular">
+                        </label>-->
+                        <!--<label class="item item-input item-stacked-label">
+                            <span class="input-label">Login</span>
+                            <input type="text" ng-model="model.NomeLogin" placeholder="Usuário Login">
+                        </label>-->
+                        <label class="item item-input item-stacked-label">
+                            <span class="input-label">Senha</span>
+                            <input type="password" ng-model="model.Senha" placeholder="Senha">
+                        </label>
+                    </div>
+                    <button class="button button-full button-positive" ng-click="CreateAccount()">
+                        Criar Conta
+                    </button>
+            </ion-modal-view>
+        </script>
+    </ion-content>
+</ion-view>

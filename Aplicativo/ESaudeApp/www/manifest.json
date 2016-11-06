@@ -1,0 +1,11 @@
+{
+  "name": "E-Saude MT",
+  "short_name": "E-Saude MT",
+  "start_url": "index.html",
+  "display": "standalone",
+  "icons": [{
+    "src": "icon.png",
+    "sizes": "512x512",
+    "type": "image/png"
+  }]
+}

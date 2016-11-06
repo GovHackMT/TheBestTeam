@@ -1,0 +1,83 @@
+﻿<ion-view view-title="Meu Mapa" ng-controller="MapsCtrl" ng-init="iniciarMapa()">
+    <ion-content scroll="false">
+        <!--<ion-pane>
+            <ion-header-bar class="bar bar-header bar-positive">
+                <h1 class="title" style="text-align:center">Meu Mapa</h1>
+            </ion-header-bar>-->
+        <div id="map"></div>
+        <div class="tabs tabs-icon-top">
+            <a class="tab-item" ng-click="MeuLocal()">
+                <i class="icon ion-home"></i> Meu Local
+            </a>
+            <a class="tab-item" ng-click="DenunciarFoco()">
+                <i class="icon ion-speakerphone"></i> Denunciar
+            </a>
+            <a class="tab-item" ng-click="Opcoes()">
+                <i class="icon ion-gear-a"></i> Opções
+            </a>
+        </div>
+        <!--</ion-pane>-->
+        <!-- Modal Denuncia -->
+        <script id="modalDenuncia.html" type="text/ng-template">
+            <ion-modal-view>
+                <ion-header-bar class="bar bar-header bar-assertive">
+                    <h1 class="title" style="left: 64px; right: 64px;">Nova Denuncia</h1>
+                    <button class="button button-assertive" ng-click="closeModalDenuncia()">Fechar</button>
+                </ion-header-bar>
+                <ion-content>
+                    <div class="list">
+                        <label class="item item-input item-stacked-label">
+                            <span class="input-label">Tipo Denuncia</span>
+                            <select class="form-select" ng-model="TipoDenuncia" ng-options="item.Descricao for item in lstTipoDenuncia">
+                                <option value="">Selecione</option>
+                            </select>
+                        </label>
+                        <label class="item item-input item-stacked-label">
+                            <span class="input-label">Observação da Denuncia</span>
+                            <textarea rows="3" placeholder="" ng-model="Observacao"></textarea>
+                        </label>
+                        <label class="item item-input item-stacked-label">
+                            <button class="button button-full button-assertive" ng-click="takePhoto()">
+                                Take Photo
+                            </button>
+                            <button class="button button-full button-assertive" ng-click="choosePhoto()">
+                                Choose Photo
+                            </button>
+                            <img ng-show="imgURI !== undefined" ng-src="{{imgURI}}" style="text-align: center">
+                        </label>
+
+
+                    </div>
+                    <button class="button button-full button-assertive" ng-click="ConfirmarDenuncia(TipoDenuncia, Observacao)">
+                        Confirmar Denuncia
+                    </button>
+                </ion-content>
+            </ion-modal-view>
+        </script>
+        <!-- Fim Modal Denuncia -->
+        <!-- Menu Opções -->
+        <script id="modalOpcoes.html" type="text/ng-template">
+            <ion-modal-view>
+                <ion-header-bar class="bar bar-header bar-positive">
+                    <h1 class="title" style="left: 64px; right: 64px;">Opções</h1>
+                    <button class="button button-positive" ng-click="closeModalOpcoes()">Fechar</button>
+                </ion-header-bar>
+                <ion-content>
+                    <div class="list">
+
+                        <a class="item item-icon-left" ng-click="closeModalOpcoes();" ui-sref="perfil">
+                            <i class="icon ion-person"></i>
+                            Meu Perfil
+                        </a>
+
+                        <a class="item item-icon-left" ng-click="Logout();">
+                            <i class="icon ion-log-out"></i>
+                            Sair
+                        </a>
+
+                    </div>
+                </ion-content>
+            </ion-modal-view>
+        </script>
+    </ion-content>
+</ion-view>

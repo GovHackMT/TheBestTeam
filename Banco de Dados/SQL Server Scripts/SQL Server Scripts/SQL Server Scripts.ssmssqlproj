@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<SqlWorkbenchSqlProject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="SQL Server Scripts">
+  <Items>
+    <LogicalFolder Name="Connections" Type="2" Sorted="true">
+      <Items>
+        <ConnectionNode Name="dbappsaude.database.windows.net:usrsistema">
+          <Created>2016-11-05T12:27:39.050295-03:00</Created>
+          <Type>SQL</Type>
+          <Server>dbappsaude.database.windows.net</Server>
+          <UserName>usrsistema</UserName>
+          <Authentication>SQL</Authentication>
+          <InitialDB />
+          <LoginTimeout>15</LoginTimeout>
+          <ExecutionTimeout>0</ExecutionTimeout>
+          <ConnectionProtocol>NotSpecified</ConnectionProtocol>
+          <ApplicationName>Microsoft SQL Server Management Studio - Query</ApplicationName>
+        </ConnectionNode>
+      </Items>
+    </LogicalFolder>
+    <LogicalFolder Name="Queries" Type="0" Sorted="true">
+      <Items>
+        <FileNode Name="Denuncia.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:dbappsaude.database.windows.net:False:usrsistema</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>dbappsaude.database.windows.net</AssociatedConnSrvName>
+          <AssociatedConnUserName>usrsistema</AssociatedConnUserName>
+          <FullPath>Denuncia.sql</FullPath>
+        </FileNode>
+        <FileNode Name="DenunciaMovimento.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:dbappsaude.database.windows.net:False:usrsistema</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>dbappsaude.database.windows.net</AssociatedConnSrvName>
+          <AssociatedConnUserName>usrsistema</AssociatedConnUserName>
+          <FullPath>DenunciaMovimento.sql</FullPath>
+        </FileNode>
+        <FileNode Name="DenunciaMovimentoTipo.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:dbappsaude.database.windows.net:False:usrsistema</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>dbappsaude.database.windows.net</AssociatedConnSrvName>
+          <AssociatedConnUserName>usrsistema</AssociatedConnUserName>
+          <FullPath>DenunciaMovimentoTipo.sql</FullPath>
+        </FileNode>
+        <FileNode Name="DenunciaTipo.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:dbappsaude.database.windows.net:False:usrsistema</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>dbappsaude.database.windows.net</AssociatedConnSrvName>
+          <AssociatedConnUserName>usrsistema</AssociatedConnUserName>
+          <FullPath>DenunciaTipo.sql</FullPath>
+        </FileNode>
+        <FileNode Name="Imagem.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:dbappsaude.database.windows.net:False:usrsistema</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>dbappsaude.database.windows.net</AssociatedConnSrvName>
+          <AssociatedConnUserName>usrsistema</AssociatedConnUserName>
+          <FullPath>Imagem.sql</FullPath>
+        </FileNode>
+        <FileNode Name="Usuario.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:dbappsaude.database.windows.net:False:usrsistema</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>dbappsaude.database.windows.net</AssociatedConnSrvName>
+          <AssociatedConnUserName>usrsistema</AssociatedConnUserName>
+          <FullPath>Usuario.sql</FullPath>
+        </FileNode>
+      </Items>
+    </LogicalFolder>
+    <LogicalFolder Name="Miscellaneous" Type="3" Sorted="true">
+      <Items />
+    </LogicalFolder>
+  </Items>
+</SqlWorkbenchSqlProject>
